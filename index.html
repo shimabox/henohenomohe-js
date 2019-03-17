@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>henohenomehe-js</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>henohenomohe-js</h1>
+        <div class="buttons">
+            <div>
+                <span><label for="facing-mode">Camera switch</label></span>
+                <input id="facing-mode" type="checkbox" value="1" checked>
+                <span class="desc-facing-mode"><label for="facing-mode">(on: Front / off: Rear)</span>
+            </div>
+            <div>
+                <span><label for="for-debug">Debug</label></span>
+                <input id="for-debug" type="checkbox" value="0">
+            </div>
+        </div>
+    </header>
+
+    <div id="video-canvas-wrapper"></div>
+
+    <div id="overlay" class="fadein">
+        <canvas id="tracking-canvas"></canvas>
+    </div>
+</div>
+<script src="js/vendor/stats/stats.min.js"></script>
+<script src="js/vendor/clmtrackr/clmtrackr.min.js"></script>
+<script src="js/v2c.js"></script>
+<script src="js/henohenomohe.js"></script>
+</body>
+</html>
