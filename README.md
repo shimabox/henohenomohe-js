@@ -18,5 +18,9 @@ It runs if it is a browser supporting the **getUserMedia API**.
 - Battery exhaustion is intense
 - In the case of a smartphone it will be hot
 
+## Related
+
+[shimabox/v2c: Video(webcam) to canvas.](https://github.com/shimabox/v2c "shimabox/v2c: Video(webcam) to canvas.")
+
 ## License
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
