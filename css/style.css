@@ -51,12 +51,6 @@ header .buttons .desc-facing-mode {
     transform: translate(-50%, -50%);
 }
 
-#from-camera {
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
-
 /* overlay */
 #overlay {
     position: absolute;
