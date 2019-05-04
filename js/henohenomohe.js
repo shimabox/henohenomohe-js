@@ -3,12 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      |--------------------------------------------------------------------------
-     | video canvas size(4:3)
+     | video canvas size
      |--------------------------------------------------------------------------
      */
-    const videoCanvasWidth  = getMeasurementSize();
-    const videoCanvasHeight = Math.round(videoCanvasWidth * (3 / 4));
-
+    const longSideSize  = getMeasurementSize();
     function getMeasurementSize() {
         let _o = window.orientation;
         let _orientation = _o === undefined ? 90 : _o;
@@ -152,8 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     // v2c
     const option = {
-        'canvasWidth': videoCanvasWidth,
-        'canvasHeight': videoCanvasHeight,
+        'longSideSize': longSideSize,
         'canvasId': 'from-camera',
         'videoId': 'camera',
         'useFrontCamera': facingMode.value !== "0",
